@@ -1,4 +1,5 @@
 import matri
+
 def mostrar_menu():
     print("\nMenú Principal:")
     print("1. Iniciar operación con la matriz")
@@ -11,22 +12,22 @@ def ejecutar_programa():
 
         if opcion == '1':
             # Ingresar la matriz
-            matriz, filas, columnas = ingresar_matriz()
+            matriz, filas, columnas = matri.ingresar_matriz()
 
             # Mostrar la matriz
-            mostrar_matriz(matriz)
+            matri.mostrar_matriz(matriz)
 
             # Calcular y mostrar la suma total de los elementos de la matriz
-            suma_total_matriz = suma_total(matriz)
+            suma_total_matriz = matri.suma_total(matriz)
             print(f"\nSuma de todos los elementos: {suma_total_matriz}")
 
             # Calcular y mostrar la suma de cada fila y columna
-            suma_filas, suma_columnas = suma_fila_columna(matriz, filas, columnas)
+            suma_filas, suma_columnas = matri.suma_fila_columna(matriz, filas, columnas)
             print(f"Suma de cada fila: {suma_filas}")
             print(f"Suma de cada columna: {suma_columnas}")
 
             # Encontrar y mostrar el mayor y menor elemento de la matriz
-            max_elemento, min_elemento = maximo_minimo(matriz)
+            max_elemento, min_elemento = matri.maximo_minimo(matriz)
             print(f"Elemento mayor de la matriz: {max_elemento}")
             print(f"Elemento menor de la matriz: {min_elemento}")
         
