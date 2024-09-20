@@ -1,4 +1,7 @@
-def ingresar_matriz():
-    ingrese_valores=int(input("Ingrese los valores de la matriz: "))
-def suma_total(matriz):
-    print("no puedo")
+import Prototipo_Exam
+def main():
+    matriz = Prototipo_Exam.ingresar_matriz()
+    Prototipo_Exam.suma_total(matriz)
+    Prototipo_Exam.suma_filas_columnas(matriz)
+    Prototipo_Exam.maximo_minimo(matriz)
+main()
